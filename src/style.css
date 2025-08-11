@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+audio {
+  display: none;
+}
+
+button {
+  -webkit-appearance: none;
+  font-family: Arial, Helvetica, "Segoe UI Symbol", "Apple Symbols", sans-serif;
+  color: transparent;
+  line-height: 1; 
+  background: transparent;
+  border: none;
+  }
+
+button::before,
+button::after{
+  color: #fff;
+  text-shadow: inherit;
+}
+
+button::before{
+  content: "\25B6\FE0E";
+}
+
+button[aria-pressed="true"]::before{
+  content: "\275A\FE0E \275A\FE0E";
+}
+
+@media only screen and (max-width: 719px) {
+    button {
+        font-size: 80px; 
+        text-shadow: 
+            .2vw 0vw .3vw #ffffff,
+            .4vw 0vw .3vw #f0f0f0, 
+            .6vw 0vw .3vw #e0e0e0, 
+            .2vw 0vw .2vw #d0d0d0, 
+            .4vw 0vw .2vw #c0c0c0, 
+            .6vw 0vw .2vw #b0b0b0, 
+            .2vw 0vw 1.5vw #a0a0a0, 
+            .4vw 0vw 1.5vw #909090, 
+            .6vw 0vw 1.5vw #808080; 
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+    button {
+        font-size: 150px; 
+        text-shadow: 
+            .2vw 0vw .5vw #ffffff, 
+            .4vw 0vw .5vw #f0f0f0, 
+            .6vw 0vw .5vw #e0e0e0, 
+            .2vw 0vw .4vw #d0d0d0, 
+            .4vw 0vw .4vw #c0c0c0, 
+            .6vw 0vw .4vw #b0b0b0, 
+            .2vw 0vw 2vw #a0a0a0, 
+            .4vw 0vw 2vw #909090, 
+            .6vw 0vw 2vw #808080;
+    }
+}
+
+@media only screen and (min-width: 1281px) {
+    button {
+        font-size: 250px; 
+        text-shadow: 
+            .1vw 0vw .25vw #ffffff, 
+            .2vw 0vw .25vw #f0f0f0, 
+            .4vw 0vw .25vw #e0e0e0, 
+            .1vw 0vw .1vw #d0d0d0, 
+            .2vw 0vw .1vw #c0c0c0, 
+            .4vw 0vw .1vw #b0b0b0, 
+            .1vw 0vw 2vw #a0a0a0, 
+            .2vw 0vw 2vw #909090, 
+            .4vw 0vw 5vw #808080;
+    }
+}
